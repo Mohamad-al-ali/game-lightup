@@ -1,0 +1,106 @@
+body{
+    background: no-repeat url("light.jpeg");
+}
+
+canvas {
+    background: white;
+    opacity: 0.8;
+    outline: 1px solid white;
+}
+ul {
+    list-style-type: none;
+    width: max-content;
+    cursor: default;
+    text-align: center;
+    border:1px solid white;
+    border-radius: 1px;
+    padding-left: 9%;
+    padding-right: 9%;
+    font-size: small;
+    background-color: black;
+    opacity: 0.9;
+    color: white;
+
+}
+
+
+#p1,#walls_nb{
+    display: none;
+    border: none;
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+    position: fixed;
+    width: 7%;
+}
+li{
+    border: none;
+    border-top:1px solid black ;
+    cursor: default;
+    font-size: small;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+ul:hover,li:hover {
+    background-color: white;
+    color: black;
+}
+#p1:hover , #walls_nb:hover{
+    background-color: black;
+    color: white;
+}
+
+#button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#myfirst,h1{
+    text-align: center;
+}
+
+#button > input,#list1,#list2{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+#w{
+    border: 1px solid black;
+    border-radius: 2px;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: rgb(232, 232, 238);
+    display: flex;
+    align-items: center;
+}
+
+#random_c{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#random_w{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+}
+p>input{
+    width: 20%;
+}
+p{
+    color: white;
+    background-color: black;
+}
+
+label{
+    font-size: small;
+    text-align: center;
+}
+
+
+

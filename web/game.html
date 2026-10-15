@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="demo.js">
+    <link rel="stylesheet" href="game.js">
+</head>
+
+<body>
+
+    <!-- ********************* html ********************* -->
+
+    <h1>Light Up</h1>
+    <hr>
+    <div id="without">
+        <div id="button" >
+            <div id="list1">
+                <ul id="d1">Classic random
+                    <ul id="p1" >
+                        <li data-index="5" id="5" onclick="Random_f(this.id)">5 x 5</li>
+                        <li data-index="6" id="6" onclick="Random_f(this.id)">6 x 6</li>
+                        <li data-index="7" id="7" onclick="Random_f(this.id)">7 x 7</li>
+                        <li data-index="8" id="8" onclick="Random_f(this.id)">8 x 8</li>
+                        <li data-index="9" id="9" onclick="Random_f(this.id)">9 x 9</li>
+                        <li data-index="10" id="10" onclick="Random_f(this.id)">10 x 10</li>
+                        
+                    </ul>
+                </ul>
+            </div>
+            <input type="button" value="Solve"  onclick="solve_b()" />
+            
+            <input type="button" value="Restart"  onclick="restart_b()" />
+
+            <input type="button" value="undo"  onclick="undo_b()" />
+            
+            <input type="button" value="redo"  onclick="redo_b()" />
+
+            <div id="w">
+                <input id="warp" type="checkbox"  onclick="warp(this.id)" />
+                <label>Wrapping</label>
+            </div>
+            <div id="list2">
+                <ul id="walls_id">Walls
+                    <ul id="walls_nb" >
+                        <li id="2" value="20" onclick="walls(this.id)">20% walls</li>
+                        <li id="3" value="30" onclick="walls(this.id)">30% walls</li>
+                        <li id="4" value="40" onclick="walls(this.id)">40% walls</li>
+                        <li id="5" value="50" onclick="walls(this.id)">50% walls</li>
+                        <li id="6" value="60" onclick="walls(this.id)">60% walls</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <div id="myfirst"> 
+            <canvas id="mycanvasPerso"></canvas>
+        </div>
+        <div id="random_c">
+            <div id="random_w">
+                <p>columns: <input type="number" min="0" id="col" value="7" onclick="col(this.id)"/> </p>
+                <p>rows: <input type="number" min="0" id="row" value="7" onclick="row(this.id)"/> </p>
+                <input type="button" value="custom random" onclick="Random_c()" />
+            </div>
+        </div>
+    </div>
+    <hr>
+    
+
+    <!-- ********************* script ********************* -->
+    <script src="game.js"></script>
+    <script src="demo.js"> </script>
+
+</body>
+
+</html>
